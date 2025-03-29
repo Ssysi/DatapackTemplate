@@ -5,7 +5,8 @@ Datapack template is a simple CLI program, that generates default file structure
 ## Instaling
 
 Install java https://adoptium.net/temurin/releases/
-Download the latest version
+
+Download the latest version https://github.com/Ssysi/DatapackTemplate/releases/
 
 Move from downloads wherever you want.
 
