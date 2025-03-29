@@ -1,6 +1,6 @@
 # Datapack Template
 
-Datapack template is a simple CLI program, that generates default file structure for Minecraft datapack.
+Datapack template is a simple CLI tool, that generates default file structure for Minecraft datapack.
 
 ## Instaling
 
