@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //String path = System.getProperty("user.home") + "/Desktop/Nový priečinok/svety/";
         String path = System.getProperty("user.home") + "/AppData/Roaming/.minecraft/saves/";
         Scanner scanner = new Scanner(System.in);
         String fullPath;
@@ -62,6 +61,9 @@ public class Main {
             fullPath = path + worldName;
             DefaultT template = new DefaultT(datapackName, version, description, loadMessage, fullPath);
             template.generate();
+            break;
+            case "version":
+            System.out.println("v0.0.1");
             break;
             default:
             System.out.println(args[0] + " is not a valid command");
