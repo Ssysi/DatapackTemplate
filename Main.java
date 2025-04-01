@@ -16,6 +16,7 @@ public class Main {
         String loadMessage;
 
         if(args.length == 0) { System.out.println("Type command (template)"); System.exit(0);}
+        if(!System.getProperty("os.name").contains("Windows")) {System.out.println("dtp does not support you operating system"); System.exit(0);}
 
         switch (args[0].toLowerCase()){
 
