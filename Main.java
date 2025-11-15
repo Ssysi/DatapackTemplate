@@ -10,7 +10,7 @@ public class Main {
         String worldName;
         Versions CheckVersion;
         String mcVersion;
-        int version;
+        double version;
         String datapackName;
         String description;
         String loadMessage;
@@ -83,3 +83,4 @@ public class Main {
         return file.exists();
     }
 }
+
