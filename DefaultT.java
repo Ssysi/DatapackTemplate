@@ -4,12 +4,12 @@ import java.io.IOException;
 
 public class DefaultT {
     String name;
-    int version;
+    double version;
     String description;
     String message;
     String path;
 
-    DefaultT(String name, int version, String description, String message, String path){
+    DefaultT(String name, double version, String description, String message, String path){
         this.name = name;
         this.version = version;
         this.description = description;
@@ -91,4 +91,5 @@ public class DefaultT {
         }
         System.out.println("Done!");
     }
+
 }
