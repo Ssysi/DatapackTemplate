@@ -15,7 +15,10 @@ public class Versions {
         {"1.21", "1.21.1"},
         {"1.21.2", "1.21.3"},
         {"1.21.4"},
-        {"1.21.5"}
+        {"1.21.5"},
+        {"1.21.6"},
+        {"1.21.7", "1.21.8"},
+        {"1.21.9","1.21.10"}
     };
     String version;
 
@@ -32,7 +35,7 @@ public class Versions {
         System.out.println("Invalid version");
         return false;
     }
-    public int versionNumber(String version){
+    public double versionNumber(String version){
         for(int ln = 0; ln < versions.length; ln++){
             for(int col = 0; col < versions[ln].length; col++){
                 if(version.equals(versions[ln][col])){
@@ -53,6 +56,9 @@ public class Versions {
                         case 13: return 57;
                         case 14: return 61;
                         case 15: return 71;
+                        case 16: return 80;
+                        case 17: return 81;
+                        case 18: return 88.1;
                     }
                 }
             }
@@ -60,3 +66,4 @@ public class Versions {
         return 0;
     }
 }
+
