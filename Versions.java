@@ -18,7 +18,8 @@ public class Versions {
         {"1.21.5"},
         {"1.21.6"},
         {"1.21.7", "1.21.8"},
-        {"1.21.9","1.21.10"}
+        {"1.21.9","1.21.10"},
+        {"1.21.11"}
     };
     String version;
 
@@ -58,7 +59,8 @@ public class Versions {
                         case 15: return 71;
                         case 16: return 80;
                         case 17: return 81;
-                        case 18: return 88.1;
+                        case 18: return 88.0;
+                        case 19: return 94.1;
                     }
                 }
             }
@@ -66,4 +68,5 @@ public class Versions {
         return 0;
     }
 }
+
 
