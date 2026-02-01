@@ -40,13 +40,13 @@ public class DefaultT {
         if(version < 48){
             minecraftTags = new File(path + "/datapacks/" + name + "/data/minecraft/tags/functions");
             minecraftTags.mkdirs();
-            namespaceFunct = new File(path + "/datapacks/" + name + "/data/" + name + "/functions");
+            namespaceFunct = new File(path + "/datapacks/" + name + "/data/" + name.replace(' ', '_') + "/functions");
             namespaceFunct.mkdirs();
         } else{
         //directories for versions after 1.21
             minecraftTags = new File(path + "/datapacks/" + name + "/data/minecraft/tags/function");
             minecraftTags.mkdirs();
-            namespaceFunct = new File(path + "/datapacks/" + name + "/data/" + name + "/function");
+            namespaceFunct = new File(path + "/datapacks/" + name + "/data/" + name.replace(' ', '_') + "/function");
             namespaceFunct.mkdirs();
         }
         //writing load.json
@@ -54,7 +54,7 @@ public class DefaultT {
             FileWriter writer = new FileWriter(minecraftTags + "/load.json");
             writer.write("{\r\n" +
                                 "\"values\": [\r\n" +
-                                "    \"" + name + ":load\"\r\n" +
+                                "    \"" + name.replace(' ', '_') + ":load\"\r\n" +
                                 "]\r\n" +
                                 "}");
             writer.close();
@@ -66,7 +66,7 @@ public class DefaultT {
             FileWriter writer = new FileWriter(minecraftTags + "/tick.json");
             writer.write("{\r\n" +
                                 "\"values\": [\r\n" +
-                                "    \"" + name + ":tick\"\r\n" +
+                                "    \"" + name.replace(' ', '_') + ":tick\"\r\n" +
                                 "]\r\n" +
                                 "}");
             writer.close();
@@ -89,7 +89,8 @@ public class DefaultT {
         } catch(IOException e){
             System.out.println(e);
         }
-        System.out.println("Done!");
+        System.out.println("Created!");
     }
 
 }
+
